@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no, minimal-ui">
     <title>Live.Me</title>
     <meta name="description" content="KEWL LIVE">
 
@@ -11,20 +10,7 @@
     <meta name="og:title" content="Live.me Talent Show"/>
     <meta name="og:image" content="http://www.cmcm.com/activity/2016/kewl-activity-1/images/logo.png?ver=2"/>
     <meta name="og:description" content="Stars on Instagram are broadcasting on Live.me, Check it out!"/> 
-    
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/style.css?ver=232342">
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-40488675-1', 'auto');
-        ga('send', 'pageview');
-	</script>
 </head>
 
 <body>
@@ -86,7 +72,7 @@
             <div class="intro">
                 <p class="badge">Win Verification Badge</p>
                 <p class="name">April 21, 2016~ April 27, 2016</p>
-                <a href="javascript:;" class="howToJoin">How to join?</a>
+                <a href="javascript:howToJoin();" class="">How to join?</a>
             </div>
             <a href="javascript:;" class="btn"></a>
         </div>
@@ -105,7 +91,18 @@
     </div>
 
 </div>
-<script type="text/javascript" src="js/min.js?ver=7"></script>
+<script type="text/javascript">
+	
+function howToJoin(){
+	
+	var str = 'openlivepage';
+	window.webkit.messageHandlers.webViewApp.postMessage(str);
+}
+	
+</script>
+	
+	
+	
 <!-- <script type="text/javascript" src="js/lib/zepto.js?ver=1"></script>
 <script type="text/javascript" src="js/lib/common.js?ver=1"></script>
  --></body>
