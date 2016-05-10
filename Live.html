@@ -95,7 +95,11 @@
 	
 function howToJoin(){
 	
-	var str = 'openlivepage';
+	var str = {
+		
+		type:'openUrl',
+		id = @"www.baidu.com"
+	};
 	window.webkit.messageHandlers.webViewApp.postMessage(str);
 }
 	
