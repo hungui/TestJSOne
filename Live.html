@@ -95,12 +95,8 @@
 	
 function howToJoin(){
 	
-	var str = {
-		
-		type:'openUrl',
-		id = @"www.baidu.com"
-	};
-	window.webkit.messageHandlers.webViewApp.postMessage(str);
+	
+	window.webkit.messageHandlers.webViewApp.postMessage({"type":"openlivepage","id":"323"});
 }
 	
 </script>
